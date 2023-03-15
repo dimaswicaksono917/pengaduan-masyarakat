@@ -1,0 +1,118 @@
+section.half-section{
+    padding: 80px 0;
+}
+section.small-section{
+    padding: 20px 0;
+}
+button.btn-solid{
+    background-color: #ffad32;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.bg-green{
+    background-color: #018577;
+}
+.bg-green2{
+    background-color: #327A6D;
+}
+.navbar{
+    padding: 10px !important;
+}
+.navbar-nav a{
+    font-weight: 500;
+    color: white !important;
+}
+.navbar-brand{
+    color:white;
+    font-size: 32px;
+    font-weight: 700;
+}
+.carousel-caption{
+    top: 100px !important;
+}
+.carousel-caption h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+.carousel-caption h5{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.img-about img{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 98%;
+}
+.txt-about{
+    position: relative;
+    top: 70px;
+}
+.txt-about h1{
+    font-size: 42px;
+    font-weight: 700;
+    color: #327A6D;
+}
+.txt-about p{
+    font-weight: 400;
+    font-size: 20px;
+}
+.title-section h1{
+    font-size: 42px;
+    font-weight: 700;
+    color: #327A6D;
+}
+.icon-keunggulan{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #018577;
+    font-size: 40px;
+}
+.keunggulan h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #232323;
+}
+.keunggulan p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #232323;
+}
+
+
+
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 100%;
+    margin-left: 3px;
+    color: white;
+    font-weight: 700;
+    background-color: #ffad32;
+    }
+.btn-send:hover{
+    background-color: #c67803;
+    color: white;
+}
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+
+}
+
+.card{
+	margin-left: 10px;
+	margin-right: 10px;
+}
