@@ -23,15 +23,21 @@
 
 
                     <div class="card mt-4">
-                        <div class="card-body">
+                        <div class="card-bodys">
                             <div class="text-pengaduan">
-                                <h3><strong>NIK :</strong> {{ $data->nik }}</h3>
-                                <h3><strong>Tanggal :</strong> {{ $data->tgl_pengaduan }}</h3>
-                                <h3><strong>Laporan :</strong> {{ $data->isi_laporan }}</h3>
-                                <h3><strong>Status :</strong> {{ $data->status }}</h3>
-                                <h3 class="mb-5"><strong>Foto Bukti :</strong> <br>
-                                    <img width="150" src="{{ asset('img/pengaduan/' . $data->foto) }}">
-                                </h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3><strong>NIK :</strong> {{ $data->nik }}</h3>
+                                        <h3><strong>Tanggal :</strong> {{ $data->tgl_pengaduan }}</h3>
+                                        <h3><strong>Laporan :</strong> {{ $data->isi_laporan }}</h3>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3><strong>Status :</strong> {{ $data->status }}</h3>
+                                        <h3 class="mb-5"><strong>Foto Bukti :</strong> <br>
+                                            <img width="150" src="{{ asset('img/pengaduan/' . $data->foto) }}">
+                                        </h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
