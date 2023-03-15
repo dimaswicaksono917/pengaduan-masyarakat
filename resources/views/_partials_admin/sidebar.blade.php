@@ -36,7 +36,7 @@
                 </li>
             @endif
 
-            {{-- <li class="sidebar-item {{Route::is('admin.pengaduan*') ? 'active' : ''}} has-sub">
+             <li class="sidebar-item {{Route::is('admin.pengaduan*') ? 'active' : ''}} has-sub">
                 <a href="#" class="sidebar-link">
                     <i class="bi bi-collection-fill"></i>
                     <span>Pengaduan</span>
@@ -50,7 +50,8 @@
                     </li>
                     </li>
                 </ul>
-            </li> --}}
+            </li>
+            
             <li class="sidebar-item">
                 <a href="{{route('admin.logout')}}" class="sidebar-link">
                     <i class="bi bi-arrow-left-circle-fill"></i>

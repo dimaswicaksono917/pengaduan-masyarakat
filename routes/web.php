@@ -56,6 +56,15 @@ Route::prefix('webmin')->name('admin')->group(function () {
             });
         });
 
+        Route::get('pengaduan-undone', function (){ return view('admin.pengaduan.undone'); })->name('.pengaduan-undone');
+        Route::get('get-undone', [DatatableController::class, 'pengaduanProgres'])->name('.get-undone');
+        Route::get('pengaduan/{no_pengaduan}', [PengaduanAdmin::class, 'index'])->name('.pengaduan-detail');
+        Route::post('create-tanggapan/{no_pengaduan}', [PengaduanAdmin::class, 'createTanggapan'])->name('.create-tanggapan');
+
+        Route::get('pengaduan-done', function (){ return view('admin.pengaduan.done'); })->name('.pengaduan-done');
+        Route::get('get-done', [DatatableController::class, 'pengaduanDone'])->name('.get-done');
+
+
         });
 
 });
