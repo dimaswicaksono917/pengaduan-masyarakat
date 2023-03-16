@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\PetugasController;
 use App\Http\Controllers\Admin\DataTableController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\DashboardAdminController;
+use App\Http\Controllers\MonthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,6 +71,7 @@ Route::prefix('webmin')->name('admin')->group(function () {
         Route::post('create-tanggapan/{no_pengaduan}', [PengaduanAdmin::class, 'createTanggapan'])->name('.create-tanggapan');
         Route::get('pengaduan-done', function () {return view('admin.pengaduan.done');})->name('.pengaduan-done');
         Route::get('get-done', [DataTableController::class, 'pengaduanDone'])->name('.get-done');
+        Route::get('rekap/bulan', [MonthController::class, 'index'])->name('.rekap');
 
     });
 });

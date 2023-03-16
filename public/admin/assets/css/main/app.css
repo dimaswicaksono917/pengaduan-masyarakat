@@ -22340,3 +22340,9 @@ a {
 .z-1 {
     z-index: 1
 }
+.card-body{
+    padding-bottom: 0px !important;
+}
+.card{
+    margin-bottom: 0px !important;
+}

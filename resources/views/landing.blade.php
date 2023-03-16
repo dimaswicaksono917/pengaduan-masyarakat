@@ -45,7 +45,7 @@
                 <div class="col-4">
                     <div class="tahap text-center">
                         <i class="icon-tahap rounded-circle fa-solid fa-reply"></i>
-                        <h4>Petugas Mmberikan Tanggapan</h4>
+                        <h4>Petugas Memberikan Tanggapan</h4>
                     </div>
                 </div>
             </div>

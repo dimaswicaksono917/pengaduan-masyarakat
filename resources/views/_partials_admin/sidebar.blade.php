@@ -50,6 +50,9 @@
                     <li class="submenu-item {{Route::is('admin.pengaduan-undone') ? 'active' : ''}}">
                         <a href="{{route('admin.pengaduan-undone')}}">Belum Ditanggapi</a>
                     </li>
+                    <li class="submenu-item">
+                        <a href="{{route('admin.rekap')}}">Rekap Pengaduan</a>
+                    </li>
                     </li>
                 </ul>
             </li>
