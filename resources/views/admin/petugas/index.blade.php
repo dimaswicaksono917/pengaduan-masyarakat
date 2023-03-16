@@ -54,7 +54,7 @@
                                 <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
-                        <button class="btn btn-primary">Simpan</button>
+                        <button class="btn btn-success">Simpan</button>
                     </form>
                 </div>
             </div>

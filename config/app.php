@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 
+
 return [
 
     /*
@@ -69,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE'),
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'id',
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +95,6 @@ return [
     | the language folders that are provided through your application.
     |
     */
-
     'fallback_locale' => 'en',
 
     /*

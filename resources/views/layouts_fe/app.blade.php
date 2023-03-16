@@ -41,6 +41,12 @@
 {{-- end nav --}}
     @yield('content')
 
+    <section class="footer bg-green">
+        <footer class="text-center">
+            <h4 class="text-white">Copyright Dimas Wicaksono | SMK Wikrama Bogor</h4>
+        </footer>
+    </section>
+
 
 
     <script src="{{asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>

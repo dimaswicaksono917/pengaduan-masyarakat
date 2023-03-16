@@ -3,7 +3,9 @@
         <div class="d-flex justify-content-between align-items-center">
             <div class="navbar-brand">
                 <div class="container">
-                    <h2 class="text-white">Pentung</h2>
+                    <div class="logo ">
+                        <h2 class="text-white">Pentung</h2>
+                    </div>
                 </div>
             </div>
             <div class="theme-toggle d-flex gap-2 align-items-center mt-2">
@@ -51,7 +53,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li class="sidebar-item">
                 <a href="{{route('admin.logout')}}" class="sidebar-link">
                     <i class="bi bi-arrow-left-circle-fill"></i>

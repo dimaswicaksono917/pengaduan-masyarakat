@@ -71,6 +71,7 @@
             var url = '{{route('admin.pengaduan-detail', ':id')}}';
             var url = url.replace(':id', no_pengaduan);
             window.location = url
+            // console.log(no_pengaduan)
         }
     </script>
 @endsection

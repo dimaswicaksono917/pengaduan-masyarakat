@@ -3,10 +3,15 @@
 namespace App\Http\Controllers\Admin;
 
 use Carbon\Carbon;
+
+
+
+// use Barryvdh\DomPDF\PDF;
 use App\Models\Pengaduan;
 use App\Models\Tanggapan;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Return_;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -44,6 +49,12 @@ class PengaduanController extends Controller
             return redirect()->route('admin.pengaduan-undone')->with('success', 'Tanggapan berhasil diupload');
         }
 
+    }
+
+    public function cetakPDF($id){
+        $data = Pengaduan::with('masyarakat')->where('no_pengaduan', $id)->firstOrFail();
+        $tanggapan = Tanggapan::with('petugas')->where('id_pengaduan', $data->id_pengaduan)->first();
+            return view('admin.tanggapan.cetak',compact('data', 'tanggapan'));
     }
 
     public function tanggapanCode(){
