@@ -22,47 +22,44 @@
         <ul class="menu">
             <li class="sidebar-title">Menu</li>
 
-            <li class="sidebar-item {{Route::is('admin.dashboard') ? 'active' : ''}}">
-                <a href="{{route('admin.dashboard')}}" class="sidebar-link">
+            <li class="sidebar-item {{ Route::is('admin.dashboard') ? 'active' : '' }}">
+                <a href="{{ route('admin.dashboard') }}" class="sidebar-link">
                     <i class="bi bi-grid-fill"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
 
-            @if(Auth::guard('petugas')->user()->level == 'admin')
-                <li class="sidebar-item {{Route::is('admin.petugas.index') ? 'active' : ''}}">
-                    <a href="{{route('admin.petugas.index')}}" class="sidebar-link">
+            @if (Auth::guard('petugas')->user()->level == 'admin')
+                <li class="sidebar-item {{ Route::is('admin.petugas.index') ? 'active' : '' }}">
+                    <a href="{{ route('admin.petugas.index') }}" class="sidebar-link">
                         <i class="bi bi-person"></i>
                         <span>Petugas</span>
                     </a>
                 </li>
             @endif
 
-             <li class="sidebar-item {{Route::is('admin.pengaduan*') ? 'active' : ''}} has-sub">
+            <li class="sidebar-item {{ Route::is('admin.pengaduan*') ? 'active' : '' }} has-sub">
                 <a href="#" class="sidebar-link">
                     <i class="bi bi-collection-fill"></i>
                     <span>Pengaduan</span>
                 </a>
-                <ul class="submenu {{Route::is('admin.pengaduan*') ? 'active' : ''}}">
-                    <li class="submenu-item {{Route::is('admin.pengaduan-done') ? 'active' : ''}}">
-                        <a href="{{route('admin.pengaduan-done')}}">Ditanggapi</a>
+                <ul class="submenu {{ Route::is('admin.pengaduan*') ? 'active' : '' }}">
+                    <li class="submenu-item {{ Route::is('admin.pengaduan-done') ? 'active' : '' }}">
+                        <a href="{{ route('admin.pengaduan-done') }}">Ditanggapi</a>
                     </li>
-                    <li class="submenu-item {{Route::is('admin.pengaduan-undone') ? 'active' : ''}}">
-                        <a href="{{route('admin.pengaduan-undone')}}">Belum Ditanggapi</a>
+                    <li class="submenu-item {{ Route::is('admin.pengaduan-undone') ? 'active' : '' }}">
+                        <a href="{{ route('admin.pengaduan-undone') }}">Belum Ditanggapi</a>
                     </li>
-                    <li class="submenu-item">
-                        <a href="{{route('admin.rekap')}}">Rekap Pengaduan</a>
-                    </li>
-                    </li>
-                </ul>
             </li>
+        </ul>
+        </li>
 
-            <li class="sidebar-item">
-                <a href="{{route('admin.logout')}}" class="sidebar-link">
-                    <i class="bi bi-arrow-left-circle-fill"></i>
-                    <span>Logout</span>
-                </a>
-            </li>
+        <li class="sidebar-item">
+            <a href="{{ route('admin.logout') }}" class="sidebar-link">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+                <span>Logout</span>
+            </a>
+        </li>
         </ul>
     </div>
 </div>

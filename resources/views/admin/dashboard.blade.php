@@ -2,14 +2,14 @@
 @section('page_title', 'Dashboard')
 @section('content')
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 mb-4">
             <div class="card">
                 <div class="card-body">
                     <h3>Halo {{$me->nama_petugas}}</h3>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-3">
             <div class="card">
                 <div class="card-header">
                     <b>Total Registrasi Masyarakat</b>
